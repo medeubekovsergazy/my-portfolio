@@ -40,7 +40,7 @@ const About = () => {
 
         <motion.p
             variants={fadeIn("", "", 0.1, 1)}
-            className="mt-4 text-secondary text-base max-w-3xl leading-[30px]"
+            className="mt-4 text-secondary text-base w-full leading-[30px]"
         >
             My full name is Medeubekov Sergazy and I am a frontend developer.
             My main stack in development, hard skills: HTML, CSS(Sass, Scss, Tailwind CSS), JavaScript, TypeScript, Frameworks: Vue.js, Nuxt.js, React.js.
