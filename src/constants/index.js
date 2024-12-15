@@ -23,6 +23,12 @@ import {
     jobit,
     tripguide,
     threejs,
+    nuxtjs,
+    vuejs,
+    nomad,
+    imarketing,
+    mentorme,
+    jetour
 } from "../assets";
 
 export const navLinks = [
@@ -35,6 +41,10 @@ export const navLinks = [
         title: "Work",
     },
     {
+        id: "portfolio",
+        title: "Portfolio",
+    },
+    {
         id: "contact",
         title: "Contact",
     },
@@ -42,16 +52,16 @@ export const navLinks = [
 
 const services = [
     {
-        title: "Web Developer",
-        icon: web,
+        title: "Vue Developer",
+        icon: vuejs,
     },
     {
-        title: "React Native Developer",
-        icon: mobile,
+        title: "Nuxt Developer",
+        icon: nuxtjs,
     },
     {
-        title: "Backend Developer",
-        icon: backend,
+        title: "React Developer",
+        icon: reactjs,
     },
     {
         title: "Content Creator",
@@ -89,12 +99,12 @@ const technologies = [
         icon: tailwind,
     },
     {
-        name: "Node JS",
-        icon: nodejs,
+        name: "Vue 3 JS",
+        icon: vuejs,
     },
     {
-        name: "MongoDB",
-        icon: mongodb,
+        name: "Nuxt 3 JS",
+        icon: nuxtjs,
     },
     {
         name: "Three JS",
@@ -116,24 +126,11 @@ const technologies = [
 
 const experiences = [
     {
-        title: "React.js Developer",
-        company_name: "Starbucks",
-        icon: starbucks,
-        iconBg: "#383E56",
-        date: "March 2020 - April 2021",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "React Native Developer",
-        company_name: "Tesla",
-        icon: tesla,
+        title: "Junior Frontend Developer",
+        company_name: "IMarketing",
+        icon: imarketing,
         iconBg: "#E6DEDD",
-        date: "Jan 2021 - Feb 2022",
+        date: "June 2022 - September 2022",
         points: [
             "Developing and maintaining web applications using React.js and other related technologies.",
             "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -142,24 +139,11 @@ const experiences = [
         ],
     },
     {
-        title: "Web Developer",
-        company_name: "Shopify",
-        icon: shopify,
+        title: "Frontend Developer",
+        company_name: "Nomad Standard Consulting",
+        icon: nomad,
         iconBg: "#383E56",
-        date: "Jan 2022 - Jan 2023",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Full stack Developer",
-        company_name: "Meta",
-        icon: meta,
-        iconBg: "#E6DEDD",
-        date: "Jan 2023 - Present",
+        date: "June 2022 - currently",
         points: [
             "Developing and maintaining web applications using React.js and other related technologies.",
             "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -198,25 +182,35 @@ const testimonials = [
 
 const projects = [
     {
-        name: "Car Rent",
+        name: "Jetour Auto online catalog",
         description:
-            "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+            "Project description. What exactly is implemented in these sites:\n" +
+            "Creating an intuitive interface.\n" +
+            "Integration with CRM-systems to automate the processing of requests.\n" +
+            "Providing fast and convenient navigation through the catalog of cars\n" +
+            "Developed convenient functionality for familiarization and application for purchase or test drive of cars.\n" +
+            "Functionality of integration to Bitrix 24 was realized.\n" +
+            "Developed functionality for adding a model range and updating the characteristics of cars.",
         tags: [
             {
-                name: "react",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "mongodb",
+                name: "nuxtjs",
                 color: "green-text-gradient",
             },
             {
-                name: "tailwind",
+                name: "javascript",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "scss",
                 color: "pink-text-gradient",
             },
+            {
+                name: "restapi",
+                color: "green-text-gradient",
+            },
         ],
-        image: carrent,
-        source_code_link: "https://github.com/",
+        image: jetour,
+        source_code_link: "https://jetour-auto.kz/",
     },
     {
         name: "Job IT",
@@ -240,25 +234,35 @@ const projects = [
         source_code_link: "https://github.com/",
     },
     {
-        name: "Trip Guide",
+        name: "MentorMe Educational Portal",
         description:
-            "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+            "Project description. A website portal for students to enroll in international universities.\n" +
+            "What is realized in this project:\n" +
+            "Intuitive interface for familiarization with services;\n" +
+            "World Map with indication of students enrolled in International Universities.\n" +
+            "Page with available grants and lists of programs for admission.\n" +
+            "Learning platform for enrollment in the university of your choice and with a subscription system;\n" +
+            "Login and Registration to the portal",
         tags: [
             {
-                name: "nextjs",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "supabase",
+                name: "vuejs",
                 color: "green-text-gradient",
             },
             {
-                name: "css",
+                name: "javascript",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "scss",
                 color: "pink-text-gradient",
             },
+            {
+                name: "restapi",
+                color: "yellow-text-gradient",
+            },
         ],
-        image: tripguide,
-        source_code_link: "https://github.com/",
+        image: mentorme,
+        source_code_link: "https://www.mentorme.kz/",
     },
 ];
 

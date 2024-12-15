@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from 'react-router-dom';
+import { useTranslation } from "react-i18next";
 
 import { styles } from '../styles';
 import { navLinks } from "../constants/index.js";
@@ -8,6 +9,12 @@ import { logo, menu, close } from '../assets';
 const Navbar = () => {
     const [active, setActive] = useState('');
     const [toggle, setToggle] = useState(false);
+    const { t, i18n } = useTranslation();
+
+    const handleLanguageChange = (event) => {
+        const selectedLanguage = event.target.value;
+        i18n.changeLanguage(selectedLanguage);
+    };
 
     return (
         <nav
@@ -42,6 +49,20 @@ const Navbar = () => {
                     ))}
                 </ul>
 
+                <div className="hidden sm:flex">
+                    <select
+                        name="lang"
+                        id="lang"
+                        onChange={handleLanguageChange}
+                        defaultValue={i18n.language}
+                        className="flex items-center justify-center w-20 h-8 outline-none rounded bg-secondary cursor-pointer text-sm text-white"
+                    >
+                        <option value="ru">Русский</option>
+                        <option value="en">English</option>
+                        <option value="kz">Қазақша</option>
+                    </select>
+                </div>
+
                 <div className="sm:hidden flex flex-1 justify-end items-center">
                     <img
                         src={toggle ? close : menu}
@@ -70,6 +91,19 @@ const Navbar = () => {
                                     <a href={`#${link.id}`}>{link.title}</a>
                                 </li>
                             ))}
+                            <div className="flex sm:hidden">
+                                <select
+                                    name="lang"
+                                    id="lang"
+                                    onChange={handleLanguageChange}
+                                    defaultValue={i18n.language}
+                                    className="flex items-center justify-center w-20 h-8 outline-none rounded bg-secondary cursor-pointer text-sm text-white"
+                                >
+                                    <option value="ru">Русский</option>
+                                    <option value="en">English</option>
+                                    <option value="kz">Қазақша</option>
+                                </select>
+                            </div>
                         </ul>
                     </div>
                 </div>

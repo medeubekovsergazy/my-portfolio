@@ -51,7 +51,7 @@ const About = () => {
             Main goal: to become a professional in Web-development and a Senior Developer
         </motion.p>
 
-        <div className="mt-20 flex flex-wrap gap-10">
+        <div className="mt-20 flex flex-wrap items-center justify-center gap-10">
             {services.map((service, index) => (
                 <ServiceCard key={service.title} index={index} {...service} />
             ))}
