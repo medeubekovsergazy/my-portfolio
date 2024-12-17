@@ -6,6 +6,7 @@ import { styles } from "../styles";
 import { SectionWrapper } from '../hoc';
 import { EarthCanvas } from './canvas';
 import { slideIn } from "../utils/motion.js";
+import {useTranslation} from "react-i18next";
 
 // template_rwic4m6
 // service_asd9nid
@@ -19,6 +20,7 @@ const Contact = () => {
     message: ''
   });
   const [loading, setLoading] = useState(false);
+    const { t } = useTranslation();
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -62,8 +64,8 @@ const Contact = () => {
           variants={slideIn('left', 'tween', 0.2, 1)}
           className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
       >
-        <p className={styles.sectionSubText}>Get in touch</p>
-        <h3 className={styles.sectionHeadText}>Contact</h3>
+        <p className={styles.sectionSubText}>{t('contact.subTitle')}</p>
+        <h3 className={styles.sectionHeadText}>{t('contact.title')}</h3>
 
         <form
             ref={formRef}
@@ -71,35 +73,35 @@ const Contact = () => {
             className="mt-12 flex flex-col gap-8"
         >
           <label className="flex flex-col">
-            <span className="text-white font-medium mb-4">Your Full Name</span>
+            <span className="text-white font-medium mb-4">{t('contact.labels.name')}</span>
             <input
                 type="text"
                 name="name"
                 value={form.name}
                 onChange={handleChange}
-                placeholder="Enter full name"
+                placeholder={t('contact.placeholder.name')}
                 className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
           <label className="flex flex-col">
-            <span className="text-white font-medium mb-4">Your Email</span>
+            <span className="text-white font-medium mb-4">{t('contact.labels.email')}</span>
             <input
                 type="email"
                 name="email"
                 value={form.email}
                 onChange={handleChange}
-                placeholder="Enter email"
+                placeholder={t('contact.placeholder.email')}
                 className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
           <label className="flex flex-col">
-            <span className="text-white font-medium mb-4">Your Message</span>
+            <span className="text-white font-medium mb-4">{t('contact.labels.message')}</span>
             <textarea
                 rows="7"
                 name="message"
                 value={form.message}
                 onChange={handleChange}
-                placeholder="What do you want to say?"
+                placeholder={t('contact.placeholder.message')}
                 className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
@@ -108,7 +110,7 @@ const Contact = () => {
               type="submit"
               className="bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl"
           >
-            {loading ? 'Sending...' : 'Send'}
+            {loading ? t('contact.loading') : t('contact.button')}
           </button>
         </form>
       </motion.div>

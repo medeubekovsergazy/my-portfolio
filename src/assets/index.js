@@ -35,7 +35,13 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import mentorme from './mentorme.png';
 import link from './link.png';
+import vite from './vite.png';
+import websocket from './socket.png';
 import jetour from './jetour-auto.png';
+import santehmart from './santehmart.png';
+import tanuaward from './tanuaward.png';
+import crm from './crm-akzhol.png';
+import mukaman from './mukaman.png';
 
 export {
     logo,
@@ -68,9 +74,15 @@ export {
     tripguide,
     vuejs,
     nuxtjs,
+    vite,
+    websocket,
     imarketing,
     nomad,
     mentorme,
     link,
-    jetour
+    jetour,
+    santehmart,
+    tanuaward,
+    crm,
+    mukaman
 };

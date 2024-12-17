@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from "react-i18next";
 
 import { styles } from '../styles';
-import { navLinks } from "../constants/index.js";
+import { useNavLinks } from "../constants/index.js";
 import { logo, menu, close } from '../assets';
 
 const Navbar = () => {
@@ -15,6 +15,7 @@ const Navbar = () => {
         const selectedLanguage = event.target.value;
         i18n.changeLanguage(selectedLanguage);
     };
+    const navLinks = useNavLinks(t);
 
     return (
         <nav
@@ -55,7 +56,7 @@ const Navbar = () => {
                         id="lang"
                         onChange={handleLanguageChange}
                         defaultValue={i18n.language}
-                        className="flex items-center justify-center w-20 h-8 outline-none rounded bg-secondary cursor-pointer text-sm text-white"
+                        className="flex items-center justify-center w-24 h-8 outline-none rounded border border-white-100 bg-primary cursor-pointer text-sm text-white"
                     >
                         <option value="ru">Русский</option>
                         <option value="en">English</option>
@@ -97,7 +98,7 @@ const Navbar = () => {
                                     id="lang"
                                     onChange={handleLanguageChange}
                                     defaultValue={i18n.language}
-                                    className="flex items-center justify-center w-20 h-8 outline-none rounded bg-secondary cursor-pointer text-sm text-white"
+                                    className="flex items-center justify-center w-24 h-8 outline-none rounded border border-white-100 bg-primary cursor-pointer text-sm text-white"
                                 >
                                     <option value="ru">Русский</option>
                                     <option value="en">English</option>

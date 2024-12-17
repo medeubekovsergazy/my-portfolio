@@ -10,45 +10,49 @@ import {
     reactjs,
     redux,
     tailwind,
-    nodejs,
-    mongodb,
     git,
     figma,
     docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
-    carrent,
     jobit,
-    tripguide,
     threejs,
     nuxtjs,
     vuejs,
+    vite,
+    websocket,
     nomad,
     imarketing,
     mentorme,
-    jetour
+    jetour,
+    santehmart,
+    tanuaward,
+    crm,
+    mukaman
 } from "../assets";
 
-export const navLinks = [
-    {
-        id: "about",
-        title: "About",
-    },
-    {
-        id: "work",
-        title: "Work",
-    },
-    {
-        id: "portfolio",
-        title: "Portfolio",
-    },
-    {
-        id: "contact",
-        title: "Contact",
-    },
-];
+import { useTranslation } from "react-i18next";
+
+export const useNavLinks = () => {
+    const { t } = useTranslation();
+
+    return [
+        {
+            id: "about",
+            title: t("navbar.about"),
+        },
+        {
+            id: "work",
+            title: t("navbar.work"),
+        },
+        {
+            id: "portfolio",
+            title: t("navbar.portfolio"),
+        },
+        {
+            id: "contact",
+            title: t("navbar.contact"),
+        },
+    ];
+};
 
 const services = [
     {
@@ -91,14 +95,6 @@ const technologies = [
         icon: reactjs,
     },
     {
-        name: "Redux Toolkit",
-        icon: redux,
-    },
-    {
-        name: "Tailwind CSS",
-        icon: tailwind,
-    },
-    {
         name: "Vue 3 JS",
         icon: vuejs,
     },
@@ -110,6 +106,18 @@ const technologies = [
         name: "Three JS",
         icon: threejs,
     },
+    {
+        name: "Tailwind CSS",
+        icon: tailwind,
+    },
+    {
+        name: "Vite",
+        icon: vite,
+    },
+    // {
+    //     name: "WebSocket",
+    //     icon: websocket,
+    // },
     {
         name: "git",
         icon: git,
@@ -124,34 +132,39 @@ const technologies = [
     },
 ];
 
-const experiences = [
-    {
-        title: "Junior Frontend Developer",
-        company_name: "IMarketing",
-        icon: imarketing,
-        iconBg: "#E6DEDD",
-        date: "June 2022 - September 2022",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Frontend Developer",
-        company_name: "Nomad Standard Consulting",
-        icon: nomad,
-        iconBg: "#383E56",
-        date: "June 2022 - currently",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-];
+export const useExperiences = () => {
+    const { t } = useTranslation();
+    return [
+        {
+            title: t('experience.juniorFrontendDeveloper.title'),
+            company_name: "IMarketing",
+            icon: imarketing,
+            iconBg: "#E6DEDD",
+            date: t("experience.juniorFrontendDeveloper.date"),
+            points: [
+                t("experience.juniorFrontendDeveloper.point1"),
+                t("experience.juniorFrontendDeveloper.point2"),
+                t("experience.juniorFrontendDeveloper.point3"),
+                t("experience.juniorFrontendDeveloper.point4"),
+                t("experience.juniorFrontendDeveloper.point5")
+            ],
+        },
+        {
+            title: t("experience.frontendDeveloper.title"),
+            company_name: "Nomad Standard Consulting",
+            icon: nomad,
+            iconBg: "#383E56",
+            date: t("experience.frontendDeveloper.date"),
+            points: [
+                t("experience.frontendDeveloper.point1"),
+                t("experience.frontendDeveloper.point2"),
+                t("experience.frontendDeveloper.point3"),
+                t("experience.frontendDeveloper.point4"),
+                t("experience.frontendDeveloper.point5")
+            ],
+        },
+    ];
+};
 
 const testimonials = [
     {
@@ -180,90 +193,163 @@ const testimonials = [
     },
 ];
 
-const projects = [
-    {
-        name: "Jetour Auto online catalog",
-        description:
-            "Project description. What exactly is implemented in these sites:\n" +
-            "Creating an intuitive interface.\n" +
-            "Integration with CRM-systems to automate the processing of requests.\n" +
-            "Providing fast and convenient navigation through the catalog of cars\n" +
-            "Developed convenient functionality for familiarization and application for purchase or test drive of cars.\n" +
-            "Functionality of integration to Bitrix 24 was realized.\n" +
-            "Developed functionality for adding a model range and updating the characteristics of cars.",
-        tags: [
-            {
-                name: "nuxtjs",
-                color: "green-text-gradient",
-            },
-            {
-                name: "javascript",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "scss",
-                color: "pink-text-gradient",
-            },
-            {
-                name: "restapi",
-                color: "green-text-gradient",
-            },
-        ],
-        image: jetour,
-        source_code_link: "https://jetour-auto.kz/",
-    },
-    {
-        name: "Job IT",
-        description:
-            "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-        tags: [
-            {
-                name: "react",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "restapi",
-                color: "green-text-gradient",
-            },
-            {
-                name: "scss",
-                color: "pink-text-gradient",
-            },
-        ],
-        image: jobit,
-        source_code_link: "https://github.com/",
-    },
-    {
-        name: "MentorMe Educational Portal",
-        description:
-            "Project description. A website portal for students to enroll in international universities.\n" +
-            "What is realized in this project:\n" +
-            "Intuitive interface for familiarization with services;\n" +
-            "World Map with indication of students enrolled in International Universities.\n" +
-            "Page with available grants and lists of programs for admission.\n" +
-            "Learning platform for enrollment in the university of your choice and with a subscription system;\n" +
-            "Login and Registration to the portal",
-        tags: [
-            {
-                name: "vuejs",
-                color: "green-text-gradient",
-            },
-            {
-                name: "javascript",
-                color: "blue-text-gradient",
-            },
-            {
-                name: "scss",
-                color: "pink-text-gradient",
-            },
-            {
-                name: "restapi",
-                color: "yellow-text-gradient",
-            },
-        ],
-        image: mentorme,
-        source_code_link: "https://www.mentorme.kz/",
-    },
-];
+export const useProjects = () => {
+    const { t } = useTranslation();
+    return [
+        {
+            name: t("works.projects.0.name"),
+            description: t("works.projects.0.description"),
+            tags: [
+                {
+                    name: "nuxtjs",
+                    color: "green-text-gradient",
+                },
+                {
+                    name: "javascript",
+                    color: "blue-text-gradient",
+                },
+                {
+                    name: "scss",
+                    color: "pink-text-gradient",
+                },
+                {
+                    name: "restapi",
+                    color: "white-text",
+                },
+            ],
+            image: jetour,
+            source_code_link: "https://jetour-auto.kz/",
+        },
+        {
+            name: t("works.projects.1.name"),
+            description: t("works.projects.1.description"),
+            tags: [
+                {
+                    name: "nuxt",
+                    color: "green-text-gradient",
+                },
+                {
+                    name: "typescript",
+                    color: "blue-text-gradient",
+                },
+                {
+                    name: "tailwind",
+                    color: "pink-text-gradient",
+                },
+                {
+                    name: "restapi",
+                    color: "white-text",
+                },
+            ],
+            image: santehmart,
+            source_code_link: "https://santehmart.kz/",
+        },
+        {
+            name: t("works.projects.2.name"),
+            description: t("works.projects.2.description"),
+            tags: [
+                {
+                    name: "vuejs",
+                    color: "green-text-gradient",
+                },
+                {
+                    name: "javascript",
+                    color: "blue-text-gradient",
+                },
+                {
+                    name: "scss",
+                    color: "pink-text-gradient",
+                },
+                {
+                    name: "restapi",
+                    color: "white-text",
+                },
+            ],
+            image: mentorme,
+            source_code_link: "https://www.mentorme.kz/",
+        },
+        {
+            name: t("works.projects.3.name"),
+            description: t("works.projects.3.description"),
+            tags: [
+                {
+                    name: "nuxtjs",
+                    color: "green-text-gradient",
+                },
+                {
+                    name: "typescript",
+                    color: "blue-text-gradient",
+                },
+                {
+                    name: "tailwind",
+                    color: "pink-text-gradient",
+                },
+                {
+                    name: "restapi",
+                    color: "white-text",
+                },
+            ],
+            image: tanuaward,
+            source_code_link: "https://tanuaward.kz/",
+        },
+        {
+            name: t("works.projects.4.name"),
+            description: t("works.projects.4.description"),
+            tags: [
+                {
+                    name: "vuejs",
+                    color: "green-text-gradient",
+                },
+                {
+                    name: "javascript",
+                    color: "blue-text-gradient",
+                },
+                {
+                    name: "scss",
+                    color: "pink-text-gradient",
+                },
+                {
+                    name: "restapi",
+                    color: "white-text",
+                },
+            ],
+            image: mukaman,
+            source_code_link: "https://mukaman.kz/",
+        },
+        {
+            name: t("works.projects.5.name"),
+            description: t("works.projects.5.description"),
+            tags: [
+                {
+                    name: "nuxtjs",
+                    color: "green-text-gradient",
+                },
+                {
+                    name: "typescript",
+                    color: "blue-text-gradient",
+                },
+                {
+                    name: "tailwind",
+                    color: "pink-text-gradient",
+                },
+                {
+                    name: "restapi",
+                    color: "white-text",
+                },
+                {
+                    name: "wazzup",
+                    color: "green-text-gradient",
+                },
+                {
+                    name: "websocket",
+                    color: "blue-text-gradient",
+                },
+            ],
+            image: crm,
+            source_code_link: "",
+        },
+    ];
+};
 
-export { services, technologies, experiences, testimonials, projects };
+
+export { services, technologies, testimonials };

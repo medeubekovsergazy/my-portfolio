@@ -1,3 +1,96 @@
 {
-
+  "hero": {
+    "title": "Hi, I'm",
+    "subTitle": "Frontend developer with commercial experience creating attractive web applications",
+    "myName": "Sergazy"
+  },
+  "about": {
+    "title": "Overview",
+    "subTitle": "Introduction",
+    "content": "My name is Medeubekov Sergazy - I am Frontend Developer, with commercial experience of 2 years. My main development stack: HTML, CSS (Sass, Scss, Tailwind CSS), JavaScript, TypesScript, Frameworks: Vue.js, Nuxt.js, React.js. I have created and optimized landings, online stores, corporate websites and e-learning portals for large companies in Kazakhstan. My skills and experience in website development helped companies to gain recognition and increase their sales.  I am responsible and always try to meet deadlines, strive for constant self-development, quickly learn new technologies and ready to apply them in practice. In my free time, I enjoy football, fitness, table tennis, mobile videography and work on developing my personal brand. Main goal: to become a professional in Web-development and a Senior Developer"
+  },
+  "navbar": {
+    "about": "About",
+    "work": "Work",
+    "portfolio": "Portfolio",
+    "contact": "Contact"
+  },
+  "experience": {
+    "title": "What I have done so far",
+    "subTitle": "Work Experience",
+    "juniorFrontendDeveloper": {
+      "title": "Junior Frontend Developer",
+      "date": "June 2022 - September 2022",
+      "point1": "Assisted in building single-page applications with Vue 2, Vue 3, resulting in a 30% faster load time.",
+      "point2": "Integrated third-party APIs and libraries to enhance the functionality of customer-facing applications.",
+      "point3": "Worked closely with designers to translate UI/UX wireframes into code, ensuring pixel-perfect results.",
+      "point4": "Developed reusable components that reduced development time for new projects by 25%.",
+      "point5": "Implementing responsive design and ensuring cross-browser compatibility."
+    },
+    "frontendDeveloper": {
+      "title": "Frontend Developer",
+      "date": "June 2022 - currently",
+      "point1": "Worked on JavaScript, TypeScript, Vue 3, Nuxt 3, Tailwind CSS, Web Socket, RestAPI, Axios, Fetch, Docker, Git, Nginx, CI/CD, Visual Studio Code, WebStorm",
+      "point2": "Developed dynamic, responsive web applications using Vue.js and Nuxt.js, improving user engagement by 20%.",
+      "point3": "Collaborated with the backend team to implement REST APIs and WebSockets, optimizing communication between frontend and backend.",
+      "point4": "Together with the team, we switched to TypeScript for strict code typing, which improved the usability of the code and reduced the number of errors during execution by 15%.",
+      "point5": "Conducted code reviews, ensuring high-quality code and adherence to best practices across the development team"
+    }
+  },
+  "works": {
+    "title": "Projects",
+    "subTitle": "My portfolio",
+    "content": "Following projects showcases my skills and experience through real-world examples of my work. Each project is briefly described with links to code repositories and live demos in it. It reflects my ability to solve complex problems, work with different technologies, and manage projects effectively.",
+    "projects": [
+      {
+        "name": "Jetour Auto online catalog",
+        "description":
+        "Project description. What exactly is implemented in these sites:\n Creating an intuitive interface.\nIntegration with CRM-systems to automate the processing of requests.\nProviding fast and convenient navigation through the catalog of cars\nDeveloped convenient functionality for familiarization and application for purchase or test drive of cars.\nFunctionality of integration to Bitrix 24 was realized.\nDeveloped functionality for adding a model range and updating the characteristics of cars."
+      },
+      {
+        "name": "Santehmart online plumbing store",
+        "description": "Implemented functionality: 1. Product Catalog: - Categorization: Products are organized into categories, including filtration systems, pumps, lighting systems, and pool accessories. - Filters and Search: The built-in filter and feature search system allows customers to quickly find the right products. 2. Shopping cart and checkout: - Shopping Cart: A convenient shopping cart with an order editing function allows users to manage their purchases before checkout. - Multi-step checkout: The checkout process is divided into several steps, including entering shipping information, choosing a payment method and confirming the order. 3. Personal account: - Registration and Login: Users can create an account to track their orders, save items to favorites and manage personal data. - Order history: Information about previous orders is saved in the personal account, which allows customers to easily repeat purchases. 4. Integration with payment systems: Integration with popular payment systems has been implemented, which allows customers to safely pay for orders online. 5. Support for different delivery methods: The system supports the selection of various delivery methods, including courier delivery and pickup from the nearest pick-up points. 6. SEO optimization: The site has been optimized for search engines, which helps to increase the visibility of the online store on the Internet and attract more customers. 7. Responsive design: The online store is adapted to various devices, which ensures ease of use on computers, tablets and smartphones."
+      },
+      {
+        "name": "MentorMe Educational Portal",
+        "description":
+        "Project description: A website portal for students to enroll in international universities. What is realized in this project: Intuitive interface for familiarization with services; World Map with indication of students enrolled in International Universities; Page with available grants and lists of programs for admission; Learning platform for enrollment in the university of your choice and with a subscription system; Login and Registration to the portal."
+      },
+      {
+        "name": "Website for the Tanu Award",
+        "description":
+        "Tanu Award is a project aimed at accepting applications and evaluating the work of designers around the world. On this website, you can get acquainted with the holding of the event, the rules of participation, and see previously held Awards. Main functionality implemented in this project: - Layout of all pages with animation; - Implementation of the Bitrix callback form on the main page; - Accepting applications from designers; - News pages, jury with details."
+      },
+      {
+        "name": "Financial Exchange Rate Platform Mukaman",
+        "description":
+        "This is a project of the financial courses platform website, where entrepreneur Almas Mukaman teaches financial literacy, studies and analyzes economics, stock markets, etc. The website is quite voluminous in terms of content and functionality and is the first big project I did. Main functionality implemented in this project: - Layout of all pages with animation and interactive background using the library particles.js; - Registration and Login with the ability to log in via Google account; - Selection of courses, rates, language of the course; - Functionality of the basket, where the user adds the selected course; - Ability to pay using acquiring epay Halyk or Kaspi QR; - Payment functionality for both authorized and non-authorized users, where registration can be done alongside payment; - Deduction of the amount from the discount coupon; - Logic for discounts on re-purchasing courses; - Watching video courses; - Time report functionality, where the total time a user watched lessons is sent to the admin panel; - Ability to write a comment on the lesson."
+      },
+      {
+        "name": "CRM system for the Akzhol Pharm",
+        "description":
+        "The CRM system was developed from scratch for the online store of the Akzhol Pharm pharmacy chain to simplify and automate order processing processes. It provides interaction between clients and managers, dividing clients into two main types: B2C (retail) and B2B (wholesale). The system supports multiple user roles: Manager, Administrator, Assembler, and Courier, each with tasks and specific access rights. Main functionality: 1. API integration and page layout: All system pages are connected to the API, with token-based authorization implemented using middleware. 2. Working with tables: The vue3-easy-data-table library is used for displaying data, supporting search and sorting via API query parameters, with components separated for B2C and B2B. 3. Order Management: Orders progress through the following stages: Accepted → In assembly → On approval → Assembled → Delivered → Completed. Clicking a row opens a detailed order card, allowing product replacement, cancellation, or progression to the next stage via POST requests. 4. Role-based access: - Manager: Full access. - Assembler: Sends orders to the Assembled stage. - Courier: Marks orders as Completed. 5. Shift management: Couriers and assemblers can open/close shifts via the system interface. Integration of third-party services: 1. Wazzup for WhatsApp: Integrated for direct customer messaging, enabling managers to respond or initiate conversations. 2. WebSockets for notifications: Real-time notifications of new orders using Pusher and Echo; customer messages via WhatsApp using Socket.io. 3. Telephony: Call requests can be sent from the order card, with recorded calls displayed and playable in the Conversation Recordings section. Additional features: A dark theme is implemented using Tailwind CSS for improved user experience."
+      }
+    ]
+  },
+  "tech": {
+    "title": "Hard Skills",
+    "subTitle": "What can I do"
+  },
+  "contact": {
+    "title": "Contact",
+    "subTitle": "Get in touch",
+    "labels": {
+      "name": "Your Full Name",
+      "email": "Your Email",
+      "message":"Your Message"
+    },
+    "placeholder": {
+      "name": "Enter full name",
+      "email": "Enter email",
+      "message": "What do you want to say?"
+    },
+    "button": "Send",
+    "loading": "Sending..."
+  }
 }

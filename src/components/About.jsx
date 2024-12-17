@@ -6,6 +6,7 @@ import { styles } from "../styles";
 import { services } from "../constants/index.js";
 import { fadeIn, textVariant } from "../utils/motion.js";
 import { SectionWrapper } from '../hoc';
+import { useTranslation } from "react-i18next";
 
 const ServiceCard = ({ index, title, icon }) => {
     return (
@@ -31,33 +32,28 @@ const ServiceCard = ({ index, title, icon }) => {
 };
 
 const About = () => {
-  return (
-    <>
-        <motion.div variants={textVariant()}>
-          <p className={styles.sectionSubText}>Introduction</p>
-          <h2 className={styles.sectionHeadText}>Overview</h2>
-        </motion.div>
+    const { t } = useTranslation();
+      return (
+        <>
+            <motion.div variants={textVariant()}>
+              <p className={styles.sectionSubText}>{t('about.subTitle')}</p>
+              <h2 className={styles.sectionHeadText}>{t('about.title')}</h2>
+            </motion.div>
 
-        <motion.p
-            variants={fadeIn("", "", 0.1, 1)}
-            className="mt-4 text-secondary text-base w-full leading-[30px]"
-        >
-            My full name is Medeubekov Sergazy and I am a frontend developer.
-            My main stack in development, hard skills: HTML, CSS(Sass, Scss, Tailwind CSS), JavaScript, TypeScript, Frameworks: Vue.js, Nuxt.js, React.js.
-            I have experience in creating landing pages, online stores, crm-systems, corporate websites, and e-learning sites.
-            Soft skills are well developed, which allows me to work effectively in a team.
-            I am responsible and always try to meet deadlines, strive for constant self-development, quickly learn new technologies and am ready to put them into practice.
-            In my free time, I enjoy football, fitness, table tennis, mobile videography and work on developing my personal brand. <br/>
-            Main goal: to become a professional in Web-development and a Senior Developer
-        </motion.p>
+            <motion.p
+                variants={fadeIn("", "", 0.1, 1)}
+                className="mt-4 text-secondary text-base w-full leading-[30px]"
+            >
+                {t('about.content')}
+            </motion.p>
 
-        <div className="mt-20 flex flex-wrap items-center justify-center gap-10">
-            {services.map((service, index) => (
-                <ServiceCard key={service.title} index={index} {...service} />
-            ))}
-        </div>
-    </>
-  );
+            <div className="mt-20 flex flex-wrap items-center justify-center gap-10">
+                {services.map((service, index) => (
+                    <ServiceCard key={service.title} index={index} {...service} />
+                ))}
+            </div>
+        </>
+      );
 };
 
 export default SectionWrapper(About, "about");

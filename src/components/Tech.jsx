@@ -5,13 +5,15 @@ import { technologies } from "../constants/index.js";
 import {textVariant} from "../utils/motion.js";
 import {styles} from "../styles.js";
 import {motion} from "framer-motion";
+import {useTranslation} from "react-i18next";
 
 const Tech = () => {
+    const { t } = useTranslation();
   return (
       <>
         <motion.div variants={textVariant()}>
-          <p className={styles.sectionSubText}>What can I do</p>
-          <h2 className={styles.sectionHeadText}>Hard Skills</h2>
+          <p className={styles.sectionSubText}>{t('tech.subTitle')}</p>
+          <h2 className={styles.sectionHeadText}>{t('tech.title')}</h2>
         </motion.div>
         <div className='mt-10 flex flex-wrap justify-center gap-10'>
           {technologies.map((technology) => (
