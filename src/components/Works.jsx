@@ -19,10 +19,13 @@ const ProjectCard = ({
     }) => {
     return (
         <motion.div
-            variants={fadeIn("up", "spring", index*0.5, 0.75)}
+            variants={fadeIn("up", "spring", 0.5 * index, 0.75)}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
         >
             <Tilt
-                className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full h-[500px]"
+                className="bg-tertiary p-5 rounded-2xl w-[360px] h-[500px]"
             >
                 <div className="relative w-full h-[230px]">
                     <img src={image} alt={name} className="w-full h-full object-cover rounded-2xl"/>
@@ -59,21 +62,27 @@ const Works = () => {
     const projects = useProjects();
       return (
         <>
-            <motion.div variants={textVariant()}>
+            <motion.div
+                variants={textVariant()}
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+            >
                 <p className={styles.sectionSubText}>{t('works.subTitle')}</p>
                 <h2 className={styles.sectionHeadText}>{t('works.title')}</h2>
             </motion.div>
 
-            <div className="w-full flex">
-                <motion.p
-                    variants={fadeIn("", "", 0.1, 1)}
-                    className="mt-3 text-secondary text-base w-full leading-[30px]"
-                >
-                    {t('works.content')}
-                </motion.p>
-            </div>
+            <motion.p
+                variants={fadeIn("", "", 0.1, 1)}
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                className="mt-4 text-secondary text-base w-full leading-[30px]"
+            >
+                {t('works.content')}
+            </motion.p>
 
-            <div className='mt-20 flex flex-wrap gap-7'>
+            <div className='mt-20 w-full flex flex-wrap items-start justify-center gap-7'>
                 {projects.map((project, index) => (
                     <ProjectCard key={`project-${index}`} index={index} {...project} />
                 ))}
