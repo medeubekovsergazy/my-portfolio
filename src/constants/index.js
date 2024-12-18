@@ -26,7 +26,10 @@ import {
     santehmart,
     tanuaward,
     crm,
-    mukaman
+    mukaman,
+    insta,
+    telegram,
+    linkedin
 } from "../assets";
 
 import { useTranslation } from "react-i18next";
@@ -131,6 +134,21 @@ const technologies = [
         icon: docker,
     },
 ];
+
+const contacts = [
+    {
+        link: "https://www.linkedin.com/in/sergazy-medeubekov-a2a739261/",
+        icon: linkedin,
+    },
+    {
+        link: "https://t.me/rocknrolla17",
+        icon: telegram,
+    },
+    {
+        link: "https://www.instagram.com/mdbkvvs/",
+        icon: insta,
+    },
+]
 
 export const useExperiences = () => {
     const { t } = useTranslation();
@@ -352,4 +370,4 @@ export const useProjects = () => {
 };
 
 
-export { services, technologies, testimonials };
+export { services, technologies, testimonials, contacts };

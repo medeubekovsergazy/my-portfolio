@@ -42,6 +42,9 @@ import santehmart from './santehmart.png';
 import tanuaward from './tanuaward.png';
 import crm from './crm-akzhol.png';
 import mukaman from './mukaman.png';
+import insta from './insta.png';
+import telegram from './telegram.png';
+import linkedin from './linkedin.png';
 
 export {
     logo,
@@ -84,5 +87,8 @@ export {
     santehmart,
     tanuaward,
     crm,
-    mukaman
+    mukaman,
+    insta,
+    telegram,
+    linkedin
 };

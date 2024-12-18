@@ -29,7 +29,7 @@
     },
     "frontendDeveloper": {
       "title": "Frontend-разработчик",
-      "date": "Июнь 2022 - по настоящее время",
+      "date": "Июнь 2023 - по настоящее время",
       "point1": "Работал с JavaScript, TypeScript, Vue 3, Nuxt 3, Tailwind CSS, Web Socket, RestAPI, Axios, Fetch, Docker, Git, Nginx, CI/CD, Visual Studio Code, WebStorm.",
       "point2": "Разработал динамичные, адаптивные веб-приложения с использованием Vue.js и Nuxt.js, улучшив вовлечённость пользователей на 20%.",
       "point3": "Сотрудничал с бэкенд-командой для реализации REST API и WebSocket, оптимизировав взаимодействие между фронтендом и бэкендом.",

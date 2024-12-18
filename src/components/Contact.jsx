@@ -7,6 +7,7 @@ import { SectionWrapper } from '../hoc';
 import { EarthCanvas } from './canvas';
 import { slideIn } from "../utils/motion.js";
 import {useTranslation} from "react-i18next";
+import { contacts } from "../constants/index.js";
 
 // template_rwic4m6
 // service_asd9nid
@@ -66,6 +67,18 @@ const Contact = () => {
       >
         <p className={styles.sectionSubText}>{t('contact.subTitle')}</p>
         <h3 className={styles.sectionHeadText}>{t('contact.title')}</h3>
+
+        <div className="flex items-center justify-start w-full gap-5">
+          {contacts.map((contact) => ( 
+              <a href={contact.link} target="_blank" rel="noreferrer">
+                <img
+                  src={contact.icon}
+                  alt='socials'
+                  className="w-[30px] h-[30px] object-contain"
+                />
+              </a>
+          ))}
+        </div>
 
         <form
             ref={formRef}
