@@ -32,7 +32,12 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
-    emailjs.send(
+    if (form.name === '' || form.email === '' || form.message === '') {
+      setLoading(false);
+      alert('Please fill in all fields');
+      return;
+    } else {
+      emailjs.send(
         'service_asd9nid',
         'template_ocy1k4s',
         {
@@ -43,20 +48,21 @@ const Contact = () => {
           message: form.message
         },
         'LlAnQ9SbDyVtXeZy0'
-    )
-    .then(() => {
-        setLoading(false),
-        alert('Thank you for contact me!');
-        setForm({
-          name: '',
-          email: '',
-          message: ''
-        })
-    }, (error) => {
-      setLoading(false);
-      console.log(error);
-      alert('Something went wrong');
-    });
+      )
+      .then(() => {
+          setLoading(false),
+          alert('Thank you for contact me!');
+          setForm({
+            name: '',
+            email: '',
+            message: ''
+          })
+      }, (error) => {
+        setLoading(false);
+        console.log(error);
+        alert('Something went wrong');
+      });
+    }
   }
 
   return (
@@ -90,6 +96,7 @@ const Contact = () => {
             <input
                 type="text"
                 name="name"
+                required
                 value={form.name}
                 onChange={handleChange}
                 placeholder={t('contact.placeholder.name')}
@@ -101,6 +108,7 @@ const Contact = () => {
             <input
                 type="email"
                 name="email"
+                required
                 value={form.email}
                 onChange={handleChange}
                 placeholder={t('contact.placeholder.email')}
@@ -112,6 +120,7 @@ const Contact = () => {
             <textarea
                 rows="7"
                 name="message"
+                required
                 value={form.message}
                 onChange={handleChange}
                 placeholder={t('contact.placeholder.message')}
