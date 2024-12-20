@@ -117,17 +117,13 @@ const technologies = [
         name: "Vite",
         icon: vite,
     },
-    // {
-    //     name: "WebSocket",
-    //     icon: websocket,
-    // },
+    {
+        name: "WebSocket",
+        icon: websocket,
+    },
     {
         name: "git",
         icon: git,
-    },
-    {
-        name: "figma",
-        icon: figma,
     },
     {
         name: "docker",
