@@ -7,7 +7,8 @@
   "about": {
     "title": "Overview",
     "subTitle": "Introduction",
-    "content": "My name is Medeubekov Sergazy - I am Frontend Developer, with commercial experience of 2 years. My main development stack: HTML, CSS (Sass, Scss, Tailwind CSS), JavaScript, TypesScript, Frameworks: Vue.js, Nuxt.js, React.js. I have created and optimized landings, online stores, corporate websites and e-learning portals for large companies in Kazakhstan. My skills and experience in website development helped companies to gain recognition and increase their sales.  I am responsible and always try to meet deadlines, strive for constant self-development, quickly learn new technologies and ready to apply them in practice. In my free time, I enjoy football, fitness, table tennis, mobile videography and work on developing my personal brand. Main goal: to become a professional in Web-development and a Senior Developer"
+    "content": "My name is Medeubekov Sergazy - I am Frontend Developer, with commercial experience. My main development stack: HTML, CSS (Sass, Scss, Tailwind CSS), JavaScript, TypesScript, Frameworks: Vue.js, Nuxt.js, React.js. I have created and optimized landings, online stores, corporate websites and e-learning portals for large companies in Kazakhstan. My skills and experience in website development helped companies to gain recognition and increase their sales.  I am responsible and always try to meet deadlines, strive for constant self-development, quickly learn new technologies and ready to apply them in practice. In my free time, I enjoy football, fitness, table tennis, mobile videography and work on developing my personal brand. Main goal: to become a professional in Web-development and a Senior Developer",
+    "downloadCV": "Download CV"
   },
   "navbar": {
     "about": "About",
@@ -20,7 +21,7 @@
     "subTitle": "Work Experience",
     "juniorFrontendDeveloper": {
       "title": "Junior Frontend Developer",
-      "date": "June 2022 - September 2022",
+      "date": "June 2022 - April 2023",
       "point1": "Assisted in building single-page applications with Vue 2, Vue 3, resulting in a 30% faster load time.",
       "point2": "Integrated third-party APIs and libraries to enhance the functionality of customer-facing applications.",
       "point3": "Worked closely with designers to translate UI/UX wireframes into code, ensuring pixel-perfect results.",
