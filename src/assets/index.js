@@ -29,6 +29,7 @@ import starbucks from "./company/starbucks.png";
 import tesla from "./company/tesla.png";
 import imarketing from "./company/imarketing.png";
 import nomad from "./company/nomad-logo.png";
+import wisk from './company/wisk.svg';
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -45,6 +46,7 @@ import mukaman from './mukaman.png';
 import insta from './insta.png';
 import telegram from './telegram.png';
 import linkedin from './linkedin.png';
+import smart_su from './smart-su.png';
 
 export {
     logo,
@@ -90,5 +92,7 @@ export {
     mukaman,
     insta,
     telegram,
-    linkedin
+    linkedin,
+    wisk,
+    smart_su
 };

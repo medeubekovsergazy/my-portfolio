@@ -29,7 +29,9 @@ import {
     mukaman,
     insta,
     telegram,
-    linkedin
+    linkedin,
+    wisk,
+    smart_su
 } from "../assets";
 
 import { useTranslation } from "react-i18next";
@@ -175,6 +177,20 @@ export const useExperiences = () => {
                 t("experience.frontendDeveloper.point3"),
                 t("experience.frontendDeveloper.point4"),
                 t("experience.frontendDeveloper.point5")
+            ],
+        },
+        {
+            title: t("experience.frontendDeveloper2.title"),
+            company_name: "Wisk Telecom Solutions",
+            icon: wisk,
+            iconBg: "#383E56",
+            date: t("experience.frontendDeveloper2.date"),
+            points: [
+                t("experience.frontendDeveloper2.point1"),
+                t("experience.frontendDeveloper2.point2"),
+                t("experience.frontendDeveloper2.point3"),
+                t("experience.frontendDeveloper2.point4"),
+                t("experience.frontendDeveloper2.point5")
             ],
         },
     ];
@@ -361,6 +377,30 @@ export const useProjects = () => {
             ],
             image: crm,
             source_code_link: "",
+        },
+        {
+            name: t("works.projects.6.name"),
+            description: t("works.projects.6.description"),
+            tags: [
+                {
+                    name: "vue",
+                    color: "green-text-gradient",
+                },
+                {
+                    name: "typescript",
+                    color: "blue-text-gradient",
+                },
+                {
+                    name: "restapi",
+                    color: "white-text",
+                },
+                {
+                    name: "websocket",
+                    color: "blue-text-gradient",
+                },
+            ],
+            image: smart_su,
+            source_code_link: "https://smartsu.kz/",
         },
     ];
 };

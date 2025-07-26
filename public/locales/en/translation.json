@@ -30,12 +30,21 @@
     },
     "frontendDeveloper": {
       "title": "Frontend Developer",
-      "date": "June 2023 - currently",
+      "date": "June 2023 - February 2025",
       "point1": "Worked on JavaScript, TypeScript, Vue 3, Nuxt 3, Tailwind CSS, Web Socket, RestAPI, Axios, Fetch, Docker, Git, Nginx, CI/CD, Visual Studio Code, WebStorm",
       "point2": "Developed dynamic, responsive web applications using Vue.js and Nuxt.js, improving user engagement by 20%.",
       "point3": "Collaborated with the backend team to implement REST APIs and WebSockets, optimizing communication between frontend and backend.",
       "point4": "Together with the team, we switched to TypeScript for strict code typing, which improved the usability of the code and reduced the number of errors during execution by 15%.",
       "point5": "Conducted code reviews, ensuring high-quality code and adherence to best practices across the development team"
+    },
+    "frontendDeveloper2": {
+      "title": "Frontend Developer",
+      "date": "February 2025 - currently",
+      "point1": "Developed and maintained the web interface for Smart SU, a digital platform for intelligent monitoring, billing, and urban infrastructure management.",
+      "point2": "Used Vue 3 with FSD (Feature-Sliced Design) architecture to ensure a scalable and maintainable project structure.",
+      "point3": "Built custom UI components, implemented complex forms, filters, responsive layouts, and integrated REST APIs, including JWT-based authentication and session management.",
+      "point4": "Participated in the full development cycle — from sprint planning in Jira to production deployment via CI/CD pipelines on GitLab.",
+      "point5": "Actively utilized TypeScript, Vite, Pinia, Vue Router, and Vue I18n to ensure code stability, reusability, and high-quality component documentation."
     }
   },
   "works": {
@@ -71,6 +80,11 @@
         "name": "CRM system for the Akzhol Pharm",
         "description":
         "The CRM system was developed from scratch for the online store of the Akzhol Pharm pharmacy chain to simplify and automate order processing processes. It provides interaction between clients and managers, dividing clients into two main types: B2C (retail) and B2B (wholesale). The system supports multiple user roles: Manager, Administrator, Assembler, and Courier, each with tasks and specific access rights. Main functionality: 1. API integration and page layout: All system pages are connected to the API, with token-based authorization implemented using middleware. 2. Working with tables: The vue3-easy-data-table library is used for displaying data, supporting search and sorting via API query parameters, with components separated for B2C and B2B. 3. Order Management: Orders progress through the following stages: Accepted → In assembly → On approval → Assembled → Delivered → Completed. Clicking a row opens a detailed order card, allowing product replacement, cancellation, or progression to the next stage via POST requests. 4. Role-based access: - Manager: Full access. - Assembler: Sends orders to the Assembled stage. - Courier: Marks orders as Completed. 5. Shift management: Couriers and assemblers can open/close shifts via the system interface. Integration of third-party services: 1. Wazzup for WhatsApp: Integrated for direct customer messaging, enabling managers to respond or initiate conversations. 2. WebSockets for notifications: Real-time notifications of new orders using Pusher and Echo; customer messages via WhatsApp using Socket.io. 3. Telephony: Call requests can be sent from the order card, with recorded calls displayed and playable in the Conversation Recordings section. Additional features: A dark theme is implemented using Tailwind CSS for improved user experience."
+      },
+      {
+        "name": "Smart SU",
+        "description":
+        "SMART SU - COMPREHENSIVE SOLUTION FOR HOUSING AND COMMUNAL SERVICES. A single database: quick entry, search and editing of operational information on subscribers. Transparency of calculations: standard and differentiated tariffs, calculation of resource consumption according to the norm and according to meter readings. Acceleration of business processes: calculation and recalculation of charges, automatic accrual of penalties, accrual of fines, generation of invoices."
       }
     ]
   },

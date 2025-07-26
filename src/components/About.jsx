@@ -49,7 +49,7 @@ const About = () => {
 
             <div className="w-full flex items-center justify-center mt-4">
                 <a
-                    href="/CV_Sergazy_Medeubekov.pdf"
+                    href="/CV_Sergazy_Medeubekov_EN.pdf"
                     target="_blank"
                     className="w-full h-10 flex items-center justify-center text-white text-lg font-medium bg-button rounded-lg shadow-lg shadow-cyan-500/5 hover:bg-transparent hover:text-button hover:border hover:border-button sm:w-1/4"
                 >
