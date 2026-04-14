@@ -38,13 +38,21 @@
       "point5": "Conducted code reviews, ensuring high-quality code and adherence to best practices across the development team"
     },
     "frontendDeveloper2": {
-      "title": "Frontend Developer",
-      "date": "February 2025 - currently",
+      "title": "Middle Frontend Developer",
+      "date": "February 2025 - September 2025",
       "point1": "Developed and maintained the web interface for Smart SU, a digital platform for intelligent monitoring, billing, and urban infrastructure management.",
       "point2": "Used Vue 3 with FSD (Feature-Sliced Design) architecture to ensure a scalable and maintainable project structure.",
       "point3": "Built custom UI components, implemented complex forms, filters, responsive layouts, and integrated REST APIs, including JWT-based authentication and session management.",
       "point4": "Participated in the full development cycle — from sprint planning in Jira to production deployment via CI/CD pipelines on GitLab.",
       "point5": "Actively utilized TypeScript, Vite, Pinia, Vue Router, and Vue I18n to ensure code stability, reusability, and high-quality component documentation."
+    },
+    "frontendDeveloper3": {
+      "title": "Middle Frontend Developer",
+      "date": "October 2025 - Present",
+      "point1": "Developed a mobile application Agent Digital Platform (Nuxt + Capacitor, iOS/Android): onboarding and agent document signing were fully digitized (100%).",
+      "point2": "Integrated electronic signature via eGov / Digital ID.",
+      "point3": "Automated quoting processes — 90% of manual operator work was replaced by the platform.",
+      "point4": "Refactored legacy code from JavaScript to TypeScript; conducted code reviews and participated in planning and architectural discussions of the internal SaaS platform ADP (Amanat Digital Platform)."
     }
   },
   "works": {

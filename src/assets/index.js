@@ -30,6 +30,7 @@ import tesla from "./company/tesla.png";
 import imarketing from "./company/imarketing.png";
 import nomad from "./company/nomad-logo.png";
 import wisk from './company/wisk.svg';
+import amanat from "./company/amanat.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -94,5 +95,6 @@ export {
     telegram,
     linkedin,
     wisk,
-    smart_su
+    smart_su,
+    amanat
 };

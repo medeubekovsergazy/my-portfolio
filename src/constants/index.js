@@ -31,7 +31,8 @@ import {
     telegram,
     linkedin,
     wisk,
-    smart_su
+    smart_su,
+    amanat
 } from "../assets";
 
 import { useTranslation } from "react-i18next";
@@ -191,6 +192,19 @@ export const useExperiences = () => {
                 t("experience.frontendDeveloper2.point3"),
                 t("experience.frontendDeveloper2.point4"),
                 t("experience.frontendDeveloper2.point5")
+            ],
+        },
+        {
+            title: t("experience.frontendDeveloper3.title"),
+            company_name: "Amanat Insurance",
+            icon: amanat,
+            iconBg: "#383E56",
+            date: t("experience.frontendDeveloper3.date"),
+            points: [
+                t("experience.frontendDeveloper3.point1"),
+                t("experience.frontendDeveloper3.point2"),
+                t("experience.frontendDeveloper3.point3"),
+                t("experience.frontendDeveloper3.point4"),
             ],
         },
     ];
