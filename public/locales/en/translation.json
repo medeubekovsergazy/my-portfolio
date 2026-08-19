@@ -21,38 +21,38 @@
     "subTitle": "Work Experience",
     "juniorFrontendDeveloper": {
       "title": "Junior Frontend Developer",
-      "date": "June 2022 - April 2023",
-      "point1": "Assisted in building single-page applications with Vue 2, Vue 3, resulting in a 30% faster load time.",
-      "point2": "Integrated third-party APIs and libraries to enhance the functionality of customer-facing applications.",
-      "point3": "Worked closely with designers to translate UI/UX wireframes into code, ensuring pixel-perfect results.",
-      "point4": "Developed reusable components that reduced development time for new projects by 25%.",
-      "point5": "Implementing responsive design and ensuring cross-browser compatibility."
+      "date": "February 2023 - May 2023",
+      "point1": "Built websites, landing pages and online stores on Vue 2/3.",
+      "point2": "Integrated third-party APIs and libraries to extend the functionality of customer-facing applications.",
+      "point3": "Wrote reusable components, which reduced development time for new pages and sections.",
+      "point4": "Implemented responsive design and ensured correct rendering across devices and browsers.",
+      "point5": "Worked closely with designers, translating UI/UX wireframes into code."
     },
     "frontendDeveloper": {
       "title": "Frontend Developer",
       "date": "June 2023 - February 2025",
-      "point1": "Worked on JavaScript, TypeScript, Vue 3, Nuxt 3, Tailwind CSS, Web Socket, RestAPI, Axios, Fetch, Docker, Git, Nginx, CI/CD, Visual Studio Code, WebStorm",
-      "point2": "Developed dynamic, responsive web applications using Vue.js and Nuxt.js, improving user engagement by 20%.",
-      "point3": "Collaborated with the backend team to implement REST APIs and WebSockets, optimizing communication between frontend and backend.",
-      "point4": "Together with the team, we switched to TypeScript for strict code typing, which improved the usability of the code and reduced the number of errors during execution by 15%.",
-      "point5": "Conducted code reviews, ensuring high-quality code and adherence to best practices across the development team"
+      "point1": "Developed and maintained 10+ web applications (CRM, learning portals, corporate websites) on Vue and React for companies: KIA, Chevrolet, Allur, Doscar, HALYK Kazteleport, KazAtomProm, Mentorme and others.",
+      "point2": "Developed reusable components within the team, which cut project development time by roughly a quarter.",
+      "point3": "Migrated projects to TypeScript: reduced the number of runtime errors and improved the readability of the codebase.",
+      "point4": "Worked directly with enterprise clients: clarified requirements, ran demos, supported releases and maintenance after launch.",
+      "point5": "Stack: JavaScript, TypeScript, Vue/Nuxt, React, Tailwind CSS, WebSocket, REST API, Axios, Docker, Git, Nginx, CI/CD."
     },
     "frontendDeveloper2": {
       "title": "Middle Frontend Developer",
       "date": "February 2025 - September 2025",
-      "point1": "Developed and maintained the web interface for Smart SU, a digital platform for intelligent monitoring, billing, and urban infrastructure management.",
-      "point2": "Used Vue 3 with FSD (Feature-Sliced Design) architecture to ensure a scalable and maintainable project structure.",
-      "point3": "Built custom UI components, implemented complex forms, filters, responsive layouts, and integrated REST APIs, including JWT-based authentication and session management.",
-      "point4": "Participated in the full development cycle — from sprint planning in Jira to production deployment via CI/CD pipelines on GitLab.",
-      "point5": "Actively utilized TypeScript, Vite, Pinia, Vue Router, and Vue I18n to ensure code stability, reusability, and high-quality component documentation."
+      "point1": "Developed the Smart SU platform with the team (monitoring, billing, city infrastructure management) on Vue 3 + Composition API + FSD; ensured a scalable project architecture.",
+      "point2": "Built reusable UI components with the team (tables with virtualization, filters, complex multi-step forms): typical sections became 1.5–2 times faster to assemble, code duplication decreased.",
+      "point3": "Integrated REST API, including JWT-based authentication and session management.",
+      "point4": "Took part in the full development cycle: from sprint planning in Jira to code review and production deployment via CI/CD on GitLab.",
+      "point5": "Actively used TypeScript, Vite, Pinia, Vue Router and Vue I18n to ensure code stability and reusability."
     },
     "frontendDeveloper3": {
       "title": "Middle Frontend Developer",
       "date": "October 2025 - Present",
-      "point1": "Developed a mobile application Agent Digital Platform (Nuxt + Capacitor, iOS/Android): onboarding and agent document signing were fully digitized (100%).",
-      "point2": "Integrated electronic signature via eGov / Digital ID.",
-      "point3": "Automated quoting processes — 90% of manual operator work was replaced by the platform.",
-      "point4": "Refactored legacy code from JavaScript to TypeScript; conducted code reviews and participated in planning and architectural discussions of the internal SaaS platform ADP (Amanat Digital Platform)."
+      "point1": "Developed the Agent Digital Platform mobile application (Nuxt + Capacitor, iOS/Android): agent onboarding and document signing moved 100% to digital, agent activation time reduced from several days to one business day; integrated digital signature via eGov / Digital ID.",
+      "point2": "Implemented P2P video and audio calling, screen sharing and chat over WebSocket for the HelpDesk module on native WebRTC: incident handling time was reduced roughly by half.",
+      "point3": "Automated quoting processes — 90% of operators' manual work was replaced by the platform.",
+      "point4": "Rewrote legacy code from JS to TS; performed code reviews and took part in planning and architecture discussions for the internal SaaS platform ADP (Amanat Digital Platform)."
     }
   },
   "works": {
@@ -93,6 +93,10 @@
         "name": "Smart SU",
         "description":
         "SMART SU - COMPREHENSIVE SOLUTION FOR HOUSING AND COMMUNAL SERVICES. A single database: quick entry, search and editing of operational information on subscribers. Transparency of calculations: standard and differentiated tariffs, calculation of resource consumption according to the norm and according to meter readings. Acceleration of business processes: calculation and recalculation of charges, automatic accrual of penalties, accrual of fines, generation of invoices."
+      },
+      {
+        "name": "Agent Digital Platform",
+        "description": "The Agent Digital Platform (ADP) is a specialized mobile and web application primarily designed for insurance agents to issue policies online, complete remote training, and manage client portfolios without heavy paperwork."
       }
     ]
   },

@@ -48,6 +48,7 @@ import insta from './insta.png';
 import telegram from './telegram.png';
 import linkedin from './linkedin.png';
 import smart_su from './smart-su.png';
+import adp from './adp.png';
 
 export {
     logo,
@@ -96,5 +97,6 @@ export {
     linkedin,
     wisk,
     smart_su,
-    amanat
+    amanat,
+    adp
 };

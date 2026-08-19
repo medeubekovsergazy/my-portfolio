@@ -32,7 +32,8 @@ import {
     linkedin,
     wisk,
     smart_su,
-    amanat
+    amanat,
+    adp
 } from "../assets";
 
 import { useTranslation } from "react-i18next";
@@ -416,6 +417,30 @@ export const useProjects = () => {
             image: smart_su,
             source_code_link: "https://smartsu.kz/",
         },
+        {
+            name: t("works.projects.7.name"),
+            description: t("works.projects.7.description"),
+            tags: [
+                {
+                    name: "nuxt",
+                    color: "green-text-gradient",
+                },
+                {
+                    name: "typescript",
+                    color: "blue-text-gradient",
+                },
+                {
+                    name: "capacitor",
+                    color: "white-text",
+                },
+                {
+                    name: "xcode/android studio",
+                    color: "orange-text-gradient",
+                },
+            ],
+            image: adp,
+            source_code_link: "https://apps.apple.com/kz/app/agent-digital-platform/id6495065441",
+        }
     ];
 };
 
